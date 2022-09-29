@@ -59,108 +59,136 @@ a {
 
 /* Герой */
 .hero {
-color: var(--primary-bgd-color);
-text-align: center;
-letter-spacing: 0.06em;
+    color: var(--primary-bgd-color);
+    text-align: center;
+    letter-spacing: 0.06em;
 
-/* Додатково */
-background-color: rgba(47, 48, 58, 1);
+    /* Додатково */
+    background-color: rgba(47, 48, 58, 1);
 }
 
 .hero > .hero-title {
-font-weight: 900;
-font-size: 44px;
-line-height: 1.36;
-text-transform: uppercase;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-transform: uppercase;
 }
 
 .hero > .main-btn {
-color: var(--primary-bgd-color);
-background-color: var(--second-color);
-font-size: 16px;
-line-height: 1.88;
+    color: var(--primary-bgd-color);
+    background-color: var(--second-color);
+    font-size: 16px;
+    line-height: 1.88;
+    cursor: pointer;
 }
 
 /* Основна частина 
 Advantages */
 .visually-hidden {
-position: absolute;
-white-space: nowrap;
-width: 1px;
-height: 1px;
-overflow: hidden;
-border: 0;
-padding: 0;
-clip: rect(0 0 0 0);
-clip-path: inset(50%);
-margin: -1px;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
 }
 
 .advantages .advantages-title {
-font-size: 14px;
-line-height: 1.14;
-letter-spacing: 0.03em;
-text-transform: uppercase;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
 }
 
 .advantages .advantages-descr {
-color: var(--descr-color);
-font-weight: 400;
-font-size: 14px;
-line-height: 1.71;     
+    color: var(--descr-color);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;     
 }
 
 /* activity */
 .activity > .activity-title {
-font-size: 36px;
-line-height: 1.17;
-text-align: center;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
 }
 
 /*team*/
 .team > .team-title {
-font-size: 36px;
-line-height: 1.17;
-text-align: center;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
 }
 
 .team .team-name {
-font-weight: 500;
-font-size: 16px;
-line-height: 1.19;  
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;  
 }
 
 .team .team-position {
-color: var(--descr-color);
-font-weight: 400;
-font-size: 16px;
-line-height: 1.19;
+    color: var(--descr-color);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.19;
 }
 
 /* footer */ 
 .page-footer {
-background-color: rgba(47, 48, 58, 1);
-}
-
-.contacts {
-font-style: normal;
- 
-}
-
-.contacts .location {
-color: var(--primary-bgd-color);
-font-weight: 400;
-font-size: 14px;
-line-height: 1.71;
+    /* Додатково */
+    background-color: rgba(47, 48, 58, 1);
 }
 
 .contacts a {
-color: rgba(255, 255, 255, 0.6);
-font-weight: 400;
-font-size: 14px;
-line-height: 1.71;
+    color: rgba(255, 255, 255, 0.6);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
 }
 
+.contacts .location {
+    color: var(--primary-bgd-color);
+}
 
+.contacts a:hover,
+.contacts a:focus {
+    color: var(--second-color);
+}
 
+/* Page Portfolio*/
+.projects-filters button {
+    background-color: rgba(245, 244, 250, 1);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    cursor: pointer;
+}
+
+.projects-filters button:hover,
+.projects-filters button:focus {
+    background-color: var(--second-color);
+    color: var(--primary-bgd-color);
+}
+
+.examples .examples-title {
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+
+.examples .examples-descr {
+    color: var(--descr-color);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.88;
+}
+    
+.examples-title > .upper {
+    text-transform: uppercase;
+}
 
