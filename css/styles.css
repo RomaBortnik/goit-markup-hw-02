@@ -1,0 +1,166 @@
+:root {
+    --primary-text-color: rgba(33, 33, 33, 1);
+    --descr-color: rgba(117, 117, 117, 1);
+    --second-color: rgba(33, 150, 243, 1);
+    --primary-bgd-color: rgba(255, 255, 255, 1);
+
+}
+
+body {
+    background-color: var(--primary-bgd-color);
+    color: var(--primary-text-color);
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    letter-spacing: 0.03em;
+}
+
+.list {
+    list-style: none;
+}
+ 
+a {
+    text-decoration: none;
+}
+
+/* Логотип */
+.logo {
+    color: var(--second-color);
+    font-family: 'Raleway', sans-serif;    
+    font-size: 26px;
+    line-height: 1.19;
+    text-decoration: none;
+        
+}
+
+.logo .accent-studio-hd {
+    color:rgba(0, 0, 0, 1);
+}
+
+.logo .accent-studio-ft {
+    color: var(--primary-bgd-color);
+}
+
+/* Навігація основної сторінки */
+.site-nav, 
+.site-contacts {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+
+.site-nav a:hover,
+.site-contacts a:hover,
+.site-nav a:focus,
+.site-contacts a:focus {
+    color: var(--second-color);
+}
+
+/* Герой */
+.hero {
+color: var(--primary-bgd-color);
+text-align: center;
+letter-spacing: 0.06em;
+
+/* Додатково */
+background-color: rgba(47, 48, 58, 1);
+}
+
+.hero > .hero-title {
+font-weight: 900;
+font-size: 44px;
+line-height: 1.36;
+text-transform: uppercase;
+}
+
+.hero > .main-btn {
+color: var(--primary-bgd-color);
+background-color: var(--second-color);
+font-size: 16px;
+line-height: 1.88;
+}
+
+/* Основна частина 
+Advantages */
+.visually-hidden {
+position: absolute;
+white-space: nowrap;
+width: 1px;
+height: 1px;
+overflow: hidden;
+border: 0;
+padding: 0;
+clip: rect(0 0 0 0);
+clip-path: inset(50%);
+margin: -1px;
+}
+
+.advantages .advantages-title {
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+}
+
+.advantages .advantages-descr {
+color: var(--descr-color);
+font-weight: 400;
+font-size: 14px;
+line-height: 1.71;     
+}
+
+/* activity */
+.activity > .activity-title {
+font-size: 36px;
+line-height: 1.17;
+text-align: center;
+}
+
+/*team*/
+.team > .team-title {
+font-size: 36px;
+line-height: 1.17;
+text-align: center;
+}
+
+.team .team-name {
+font-weight: 500;
+font-size: 16px;
+line-height: 1.19;  
+}
+
+.team .team-position {
+color: var(--descr-color);
+font-weight: 400;
+font-size: 16px;
+line-height: 1.19;
+}
+
+/* footer */ 
+.page-footer {
+background-color: rgba(47, 48, 58, 1);
+}
+
+.contacts {
+font-style: normal;
+ 
+}
+
+.contacts .location {
+color: var(--primary-bgd-color);
+font-weight: 400;
+font-size: 14px;
+line-height: 1.71;
+}
+
+.contacts a {
+color: rgba(255, 255, 255, 0.6);
+font-weight: 400;
+font-size: 14px;
+line-height: 1.71;
+}
+
+
+
+
