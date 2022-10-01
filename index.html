@@ -16,18 +16,22 @@
   <body>
     <header>
       <nav>
-        <a class="logo" href="./index.html" lang="en">
+        <a class="link logo" href="./index.html" lang="en">
           Web<span class="accent-studio-hd">Studio</span>
         </a>
         <ul class="list site-nav">
-          <li><a href="./index.html">Студія</a></li>
-          <li><a href="./portfolio.html">Портфоліо</a></li>
-          <li><a href="#">Контакти</a></li>
+          <li><a class="link active" href="./index.html">Студія</a></li>
+          <li><a class="link" href="./portfolio.html">Портфоліо</a></li>
+          <li><a class="link" href="#">Контакти</a></li>
         </ul>
       </nav>
       <ul class="list site-contacts">
-        <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-        <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
+        <li>
+          <a class="link" href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          >
+        </li>
+        <li><a class="link" href="tel:+380961111111">+38 096 111 11 11</a></li>
       </ul>
     </header>
 
@@ -100,7 +104,7 @@
       <section class="team">
         <h1 class="team-title">Наша команда</h1>
         <ul class="list">
-          <li>
+          <li class="information">
             <img
               src="./images/members-member1.jpg"
               alt="Ігор Дем'яненко"
@@ -110,7 +114,7 @@
             <h3 class="team-name">Ігор Дем'яненко</h3>
             <p class="team-position" lang="en">Product Designer</p>
           </li>
-          <li>
+          <li class="information">
             <img
               src="./images/members-member2.jpg"
               alt="Ольга Рєпіна"
@@ -120,7 +124,7 @@
             <h3 class="team-name">Ольга Рєпіна</h3>
             <p class="team-position" lang="en">Frontend Developer</p>
           </li>
-          <li>
+          <li class="information">
             <img
               src="./images/members-member3.jpg"
               alt="Микола Тарасов"
@@ -130,7 +134,7 @@
             <h3 class="team-name">Микола Тарасов</h3>
             <p class="team-position" lang="en">Marketing</p>
           </li>
-          <li>
+          <li class="information">
             <img
               src="./images/members-member4.jpg"
               alt="Михайло Єрмаков"
@@ -144,14 +148,14 @@
       </section>
     </main>
     <footer class="page-footer">
-      <a class="logo" href="./index.html" lang="en">
+      <a class="link logo" href="./index.html" lang="en">
         Web<span class="accent-studio-ft">Studio</span>
       </a>
       <address class="contacts">
         <ul class="list">
           <li>
             <a
-              class="location"
+              class="link location"
               href="https://goo.gl/maps/3bxnUZ3EVZmGAf4NA"
               target="_blank"
               rel="noreferrer noopener nofollow"
@@ -160,10 +164,12 @@
             </a>
           </li>
           <li>
-            <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+            <a class="link" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
           </li>
           <li>
-            <a href="tel:+380961111111">+38 096 111 11 11</a>
+            <a class="link" href="tel:+380961111111">+38 096 111 11 11</a>
           </li>
         </ul>
       </address>

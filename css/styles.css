@@ -1,8 +1,13 @@
 :root {
     --primary-text-color: rgba(33, 33, 33, 1);
     --descr-color: rgba(117, 117, 117, 1);
-    --second-color: rgba(33, 150, 243, 1);
+    --secondary-color: rgba(33, 150, 243, 1);
     --primary-bgd-color: rgba(255, 255, 255, 1);
+    --logo-header-color: rgba(0, 0, 0, 1);
+    --bgd-hero-color: rgba(47, 48, 58, 1);
+    --focus-btn-color: rgb(16, 137, 236);
+    --bgd-team-color: rgba(245, 244, 250, 1);
+    --contacts-footer-color: rgba(255, 255, 255, 0.6);
 
 }
 
@@ -19,22 +24,20 @@ body {
     list-style: none;
 }
  
-a {
+.link {
     text-decoration: none;
 }
 
 /* Логотип */
 .logo {
-    color: var(--second-color);
+    color: var(--secondary-color);
     font-family: 'Raleway', sans-serif;    
     font-size: 26px;
-    line-height: 1.19;
-    text-decoration: none;
-        
+    line-height: 1.19;  
 }
 
 .logo .accent-studio-hd {
-    color:rgba(0, 0, 0, 1);
+    color:var(--logo-header-color);
 }
 
 .logo .accent-studio-ft {
@@ -42,29 +45,36 @@ a {
 }
 
 /* Навігація основної сторінки */
-.site-nav, 
-.site-contacts {
+.site-nav a, 
+.site-contacts a {
+    color: inherit;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
 }
 
+.site-contacts a {
+    color: var(--descr-color);
+}
+
+.site-nav .active {
+    color: var(--secondary-color);
+}
+
 .site-nav a:hover,
 .site-contacts a:hover,
 .site-nav a:focus,
 .site-contacts a:focus {
-    color: var(--second-color);
+    color: var(--secondary-color);
 }
 
 /* Герой */
 .hero {
+    background-color: var(--bgd-hero-color);
     color: var(--primary-bgd-color);
     text-align: center;
-    letter-spacing: 0.06em;
-
-    /* Додатково */
-    background-color: rgba(47, 48, 58, 1);
+    letter-spacing: 0.06em;  
 }
 
 .hero > .hero-title {
@@ -75,11 +85,19 @@ a {
 }
 
 .hero > .main-btn {
-    color: var(--primary-bgd-color);
-    background-color: var(--second-color);
+    color: inherit;
+    background-color: var(--secondary-color);
     font-size: 16px;
     line-height: 1.88;
     cursor: pointer;
+    font-weight: 700;
+    font-family: inherit;
+    font-style: inherit;
+    letter-spacing: inherit;
+}
+
+.hero>.main-btn:hover {
+    background-color: var(--focus-btn-color);
 }
 
 /* Основна частина 
@@ -118,6 +136,13 @@ Advantages */
 }
 
 /*team*/
+.team {
+    background-color: var(--bgd-team-color);
+}
+
+.team .information {
+    background-color: var(--primary-bgd-color);
+}
 .team > .team-title {
     font-size: 36px;
     line-height: 1.17;
@@ -140,11 +165,11 @@ Advantages */
 /* footer */ 
 .page-footer {
     /* Додатково */
-    background-color: rgba(47, 48, 58, 1);
+    background-color: var(--bgd-hero-color);
 }
 
 .contacts a {
-    color: rgba(255, 255, 255, 0.6);
+    color: var(--contacts-footer-color);
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -157,21 +182,25 @@ Advantages */
 
 .contacts a:hover,
 .contacts a:focus {
-    color: var(--second-color);
+    color: var(--secondary-color);
 }
 
 /* Page Portfolio*/
 .projects-filters button {
-    background-color: rgba(245, 244, 250, 1);
+    color: inherit;
+    background-color: var(--background-color-team);
+    font-family: inherit;
+    font-style: inherit;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
     cursor: pointer;
+    letter-spacing: inherit;
 }
 
 .projects-filters button:hover,
 .projects-filters button:focus {
-    background-color: var(--second-color);
+    background-color: var(--secondary-color);
     color: var(--primary-bgd-color);
 }
 
