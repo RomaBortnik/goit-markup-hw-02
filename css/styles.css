@@ -45,8 +45,8 @@ body {
 }
 
 /* Навігація основної сторінки */
-.site-nav a, 
-.site-contacts a {
+.site-nav .link, 
+.site-contacts .link {
     color: inherit;
     font-weight: 500;
     font-size: 14px;
@@ -54,7 +54,7 @@ body {
     letter-spacing: 0.02em;
 }
 
-.site-contacts a {
+.site-contacts .link {
     color: var(--descr-color);
 }
 
@@ -62,10 +62,10 @@ body {
     color: var(--secondary-color);
 }
 
-.site-nav a:hover,
-.site-contacts a:hover,
-.site-nav a:focus,
-.site-contacts a:focus {
+.site-nav .link:hover,
+.site-contacts .link:hover,
+.site-nav .link:focus,
+.site-contacts .link:focus {
     color: var(--secondary-color);
 }
 
@@ -168,7 +168,7 @@ Advantages */
     background-color: var(--bgd-hero-color);
 }
 
-.contacts a {
+.contacts .link {
     color: var(--contacts-footer-color);
     font-style: normal;
     font-weight: 400;
@@ -180,8 +180,8 @@ Advantages */
     color: var(--primary-bgd-color);
 }
 
-.contacts a:hover,
-.contacts a:focus {
+.contacts .link:hover,
+.contacts .link:focus {
     color: var(--secondary-color);
 }
 
